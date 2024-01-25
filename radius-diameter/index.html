@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter the radius of the circle</p>
+    <input id="radius" type="number">
+    <button onclick="calcdiameter()">Calculate Diameter</button>
+    <p id="result"></p>
+
+    <script>
+        function calcdiameter() {
+            var radius = document.getElementById('radius').value;
+            var diameter = 2 * radius;
+            document.getElementById('result').innerHTML = "The diameter is: " + diameter;
+        }
+    </script>
+</body>
+</html>

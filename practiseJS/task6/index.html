@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label id="radius">enter radius</label>
+    <input type="number" id="inputradius">
+    <button onclick="drawcircle()">change circle</button>
+    <div id="main"></div>
+
+    <script>
+        function drawcircle(){
+            let radius=document.getElementById("inputradius").value;
+            let diameter=radius * 2;
+            var circle =document.getElementById("main");
+            circle.style.width=diameter + "px"; 
+            circle.style.height=diameter + "px"; 
+        }
+    </script>
+</body>
+</html>

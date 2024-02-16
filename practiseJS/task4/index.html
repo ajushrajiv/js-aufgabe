@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mybutton">click</button>
+
+    <script>
+       document.getElementById("mybutton").onclick=function(){
+        this.style.backgroundColor=createColor();
+       }
+
+       function createColor(){
+        let letters="ABCDEF0123456789";
+        let newcolor="#";
+        for (let i=0; i<6; i++){
+            let len=Math.floor(Math.random()*6);
+            newcolor+=letters[len];
+        }
+        return newcolor
+       }
+    </script>
+
+</body>
+</html>

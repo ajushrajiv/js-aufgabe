@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="number">enter the radius</label>
+    <input type="number" id="numid">
+    <button onclick="caldiameter()">calculate diameter</button>
+    <p id="result"></p>
+
+    <script>
+        function caldiameter(){
+            var radius= document.getElementById("numid").value;
+            var diameter=radius*2;
+            document.getElementById("result").innerHTML="The diameter is"+ diameter;
+        }
+    </script>
+    
+</body>
+</html>
